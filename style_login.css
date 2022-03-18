@@ -1,0 +1,22 @@
+body{
+    background-color:lightcoral;
+}
+
+.heading{
+    font-size: 45px;
+    font-family: fantasy;
+    color: black;
+    margin-top: 100px;
+}
+
+.chat_img{
+    width: 150px;
+
+}
+
+.login_div{
+    background-color: chartreuse;
+    float: none;
+    border-radius: 30px;
+    padding: 20px;
+}

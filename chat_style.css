@@ -1,0 +1,47 @@
+.heading{
+    font-size: 45px;
+    font-family: fantasy;
+    color: black;
+    margin-top: 25px;
+}
+
+.chat_img{
+    width: 150px;
+
+}
+
+body{
+    background-color:lightcoral;
+}
+
+#msg_display{
+    background-color: yellowgreen;
+    border-radius: 20px;
+    width: 80%;
+    overflow-x: scroll;
+    overflow-y: scroll;
+    padding: 20px;
+    max-height: 400px;
+    text-align:left;
+}
+
+.msg_input{
+    background-color: yellowgreen;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    padding: 20px;
+}
+
+#msg_send_input{
+    width: 50%;
+}
+
+.tick_img{
+    width:23px;
+    height: 23px;
+}
+
+#username{
+    color: blueviolet;
+}

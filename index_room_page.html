@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+
+<title>
+WeShare
+</title>
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+<link rel="stylesheet" href = "style_room_page.css">
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-firestore.js"></script>
+<script src="https://www.gstatic.com/firebasejs/live/3.1/firebase.js"></script>
+
+
+</head>
+
+<body>
+
+<div class="container">
+
+<button type="button" class="btn btn-danger glyphicon glyphicon-log-out" id="logout" onclick="logout_web()">
+Logout
+</button>
+
+<center>
+
+<p class="heading">
+WeShare Rooms
+<img src="chat.png" class="chat_img">
+</p>
+
+<br>
+<br>
+
+<h3 id="welcome_display">
+</h3>
+
+<div class="form-group login_div">
+
+<label class="r">Add Room Name:- </label>
+<input type="text" id="room_name" placeholder="Enter the room name" class="form-control">
+
+</div>
+
+<button type="button" class="btn btn-success" id="room_btn" onclick="add_room()">
+Add The Room
+</button>
+
+<br>
+
+<h3>
+Your Rooms #Trending
+</h3>
+
+<div id="display_rooms"></div>
+
+</center>
+</div>
+
+<script src="main2.js"></script>
+
+
+</body>
+</html>

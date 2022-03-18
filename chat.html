@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+
+<title>
+WeShare
+</title>
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+<link rel="stylesheet" href = "chat_style.css">
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-firestore.js"></script>
+<script src="https://www.gstatic.com/firebasejs/live/3.1/firebase.js"></script>
+
+</head>
+
+<body>
+
+<div class="container">
+
+    <button type="button" class="btn btn-danger glyphicon glyphicon-log-out" id="logout" onclick="logout_web()">
+        Logout
+     </button>
+
+     <center>
+
+        <p class="heading">
+            WeShare Chat
+            <img src="chat.png" class="chat_img">
+            </p>
+
+            <div id="msg_display">
+                
+            </div>
+
+     </center>
+
+</div>
+
+<center>
+
+<div class="msg_input">
+
+<input type="text" placeholder="Type Your Message" id="msg_send_input" class="form-control">
+<br>
+
+<button type="button" class="btn btn-success" id="msg_send_btn" onclick="send_msg()">
+    Send Message
+    </button>
+
+</div>
+
+</center>
+
+<script src="chat.js"></script>
+
+</body>
+
+</html>
